@@ -2,9 +2,9 @@
 Maintains a constant presence of "User is typing..." in whatever Slack
 channels are defined.
 
-![Demo](./optimized.gif)
+![Demo](./assets/take2.gif)
 
-[Video Demo](./typing_typer_demo.mp4)
+[Video Demo](./assets/typing_typer_demo.mp4)
 
 ```
 bundle install
