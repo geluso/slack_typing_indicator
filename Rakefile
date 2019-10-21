@@ -1,13 +1,21 @@
 require_relative './config/environment.rb'
 
 desc 'runs slack typer'
-task :run do
+task :type do
   Typer.run
 end
 
 desc 'test auth'
 task :auth do
-  client = Slack::Web::Client.new
-  client.auth_test
-  byebug
+  AuthTest.run
+end
+
+desc 'listen to messages'
+task :listen do
+  Listen.run
+end
+
+desc 'run background tasks'
+task :proc do
+  ProcPractice.run
 end
