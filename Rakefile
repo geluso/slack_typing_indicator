@@ -19,3 +19,8 @@ desc 'run background tasks'
 task :proc do
   ProcPractice.run
 end
+
+desc 'list channels'
+task :channels do
+  Channeler.run
+end

@@ -1,23 +1,26 @@
 class ThreadedTyper
-  def initialize(client, channel)
+  def initialize(client, channel_id, name='Unknown')
     @client = client
-    @channel = channel
+    @channel_id = channel_id
+    @name = name
 
-    puts "threaded for #{channel}"
+    puts "threaded for #{name} #{channel_id}"
     run
   end
 
   def run
-    puts "running for #{@channel}"
+    puts "running for #{@channel_id}"
     repeat = 6
+    is_infinity = true
+
     Thread.new do
       count = 0
-      while count < repeat
-        @client.typing channel: @channel
+      while is_infinity || count < repeat
+        @client.typing channel: @channel_id
 
         count += 1
         delay = 2 + rand(10)
-        puts "count: #{count} delay: #{delay}"
+        puts "name: #{@name} count: #{count} delay: #{delay} infinity: #{is_infinity}"
         sleep delay
       end
 
