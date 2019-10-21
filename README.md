@@ -2,6 +2,10 @@
 Maintains a constant presence of "User is typing..." in whatever Slack
 channels are defined.
 
+![Demo](./optimized.gif)
+
+[Video Demo](./typing_typer_demo.mp4)
+
 ```
 bundle install
 rake channels
