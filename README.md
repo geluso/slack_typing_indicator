@@ -6,6 +6,11 @@ channels are defined.
 
 [Video Demo](./assets/typing_typer_demo.mp4)
 
+Review [HISTORY.md](./HISTORY.md) for a review of novel commands used here.
+Posted for posterity.
+
+## Install
+
 ```
 bundle install
 rake channels
