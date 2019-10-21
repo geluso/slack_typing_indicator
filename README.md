@@ -7,6 +7,13 @@ bundle install
 rake channels
 ```
 
-Requires exporting environment variable `STUDENT_SLACK_API_TOKEN`.
+Requires exporting environment variable `SLACK_API_TOKEN`.
 
 Visit [Slack's website to generate tokens](https://api.slack.com/custom-integrations/legacy-tokens).
+
+Add the token you get there to your `.bash_profile`
+
+**.bash_profile**
+```bash
+export SLACK_API_TOKEN="xoxp-XXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" 
+```
