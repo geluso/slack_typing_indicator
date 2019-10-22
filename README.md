@@ -19,6 +19,8 @@ rake channels
 Requires exporting environment variable `SLACK_API_TOKEN`.
 
 Visit [Slack's website to generate tokens](https://api.slack.com/custom-integrations/legacy-tokens).
+Make sure you're logged in via their web client in order to get tokens for
+different workspaces to appear.
 
 Add the token you get there to your `.bash_profile`
 
