@@ -26,3 +26,19 @@ Add the token you get there to your `.bash_profile`
 ```bash
 export SLACK_API_TOKEN="xoxp-XXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" 
 ```
+
+Modify the `interested_channels` array of strings in
+**[bin/channeler.rb](https://github.com/geluso/slack_typing_indicator/blob/master/bin/channeler.rb#L17)**
+to target the names of which channels you want to maintain typing presence in.
+
+```ruby
+interested_channels = [
+  'seattle-web-071519',
+  'seattle-web-080519',
+  'seattle-web-082619',
+  'seattle-random',
+  'hot-nuggets',
+  'all-about-code',
+  'seattle-brogue',
+]
+```
